@@ -1,7 +1,5 @@
 ### Cyclistic_Exercise_Full_Year_Analysis ###
-# This analysis is for case study 1 from the Google Data Analytics Certificate (Cyclistic).
-# It'soriginally based on the case study "'Sophisticated, Clear, and Polished': 
-# Divvy and DataVisualization" written by Kevin Hartman 
+
 # (found here:https://artscience.blog/home/divvy-dataviz-case-study). 
 # We will be using the Divvy dataset for the case study. The purpose of this script is 
 # to consolidate downloaded Divvy data into a single dataframe and then conduct simple analysis 
@@ -122,13 +120,6 @@ View(q2_2019)
 View(q3_2019)
 View(q4_2019)
 View(q1_2020)
-
-
-
-
-
-
-
 
 
 # Inspect the dataframes and look for inconguencies
@@ -307,7 +298,6 @@ all_trips_v2 %>%
   counts <- aggregate(all_trips_v2$ride_length ~ all_trips_v2$member_casual +
                         all_trips_v2$day_of_week, FUN = mean)
 
-
 write.csv(counts, file = 'D:/Github/bikeshare/avg_ride_length.csv')
-#You're done! Congratulations
+
 
